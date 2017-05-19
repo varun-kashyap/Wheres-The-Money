@@ -1,0 +1,51 @@
+{
+  "project_info": {
+    "project_number": "318657351675",
+    "project_id": "wheres-the-money"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:318657351675:android:6662a910f0e284dc",
+        "android_client_info": {
+          "package_name": "com.varunkashyap.wheresthemoney"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "318657351675-u48glapbm3b0id0cqd1tq7onbqiistk7.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.varunkashyap.wheresthemoney",
+            "certificate_hash": "96D0C9441D8B3B91FB59477CE50CE9C2F258CCCF"
+          }
+        },
+        {
+          "client_id": "318657351675-7i5q8k3g66a6rf1e9ckr4bg6b55k3to2.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDXYIsmF5YS4aOHxtmsRdZx_cwdUMBJ8tQ"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 2,
+          "analytics_property": {
+            "tracking_id": "UA-87997744-1"
+          }
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 1
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

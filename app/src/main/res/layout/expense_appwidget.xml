@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="@dimen/widget_margin"
+    android:background="@color/activity_background">
+
+    <ImageView
+        android:id="@+id/widget_icon"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:src="@mipmap/ic_launcher" />
+
+    <TextView
+        android:id="@+id/widget_text"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="2"
+        android:gravity="center"
+        android:text="@string/widget_text"
+        android:textSize="@dimen/abc_text_size_large_material"
+        android:textStyle="bold" />
+
+    <Button
+        android:id="@+id/widget_button"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:text="@string/widget_add_button" />
+
+</LinearLayout>

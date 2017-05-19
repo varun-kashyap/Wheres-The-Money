@@ -1,0 +1,61 @@
+apply plugin: 'com.android.application'
+apply plugin: 'android-apt'
+android {
+
+    signingConfigs {
+        config {
+            keyAlias 'MyKey'
+            keyPassword 'hello1'
+            storeFile file('keystore.jks')
+            storePassword 'hello1'
+        }
+    }
+    compileSdkVersion 25
+    buildToolsVersion "25.0.0"
+    defaultConfig {
+        applicationId "com.varunkashyap.wheresthemoney"
+        minSdkVersion 19
+        targetSdkVersion 25
+        versionCode 1
+        versionName "1.0"
+        testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+        vectorDrawables.useSupportLibrary = true
+        signingConfig signingConfigs.config
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+            signingConfig signingConfigs.config
+        }
+    }
+    productFlavors {
+    }
+}
+
+repositories {
+    maven { url "https://jitpack.io" }
+}
+
+dependencies {
+    compile fileTree(include: ['*.jar'], dir: 'libs')
+    androidTestCompile('com.android.support.test.espresso:espresso-core:2.2.2', {
+        exclude group: 'com.android.support', module: 'support-annotations'
+    })
+    compile 'com.github' +
+            '.PhilJay:MPAndroidChart:v2.2.4'
+    compile 'com.google.android.gms:play-services-auth:9.8.0'
+    compile 'com.google.android.gms:play-services-analytics:9.8.0'
+    compile 'com.android.support:appcompat-v7:25.0.1'
+    compile 'com.android.support:design:25.0.1'
+    compile 'com.jakewharton:butterknife:8.0.0'
+    compile 'com.android.support:cardview-v7:25.0.1'
+    compile 'com.android.support:recyclerview-v7:25.0.1'
+    compile 'com.android.support:support-v4:25.0.1'
+    compile 'com.github.clans:fab:1.6.4'
+    compile 'com.android.support:support-vector-drawable:25.0.1'
+    testCompile 'junit:junit:4.12'
+    apt 'com.jakewharton:butterknife-compiler:8.0.0'
+    compile 'com.squareup.okhttp3:okhttp:3.4.2'
+}
+apply plugin: 'com.google.gms.google-services'

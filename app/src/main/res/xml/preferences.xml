@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <EditTextPreference
+        android:key="pref_budget"
+        android:title="@string/pref_budget"
+        android:singleLine="true"
+        android:contentDescription="@string/pref_budget_description"
+        android:inputType="number|numberDecimal"
+        android:defaultValue="@string/pref_budget_default" />
+</PreferenceScreen>
